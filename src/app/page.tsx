@@ -51,7 +51,7 @@ export default function LandingPage() {
           ]}
           avatarText="Trusted by 142+ satisfied customers • 5.0 stars"
           buttons={[
-            { text: "Visit Us Today", href: "contact" },
+            { text: "Get Directions Now", href: "contact" },
             { text: "Learn More", href: "about" }
           ]}
           buttonAnimation="slide-up"
