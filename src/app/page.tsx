@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect } from "react";
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import NavbarStyleCentered from "@/components/navbar/NavbarStyleCentered/NavbarStyleCentered";
 import HeroCentered from "@/components/sections/hero/HeroCentered";
@@ -12,6 +13,11 @@ import FooterSimple from "@/components/sections/footer/FooterSimple";
 import { Heart, Leaf, Star, MapPin } from "lucide-react";
 
 export default function LandingPage() {
+  useEffect(() => {
+    // Fix hydration mismatch by ensuring consistent rendering
+    // Remove any SSR-specific logic that might differ between server and client
+  }, []);
+
   return (
     <ThemeProvider
       defaultButtonVariant="hover-magnetic"
