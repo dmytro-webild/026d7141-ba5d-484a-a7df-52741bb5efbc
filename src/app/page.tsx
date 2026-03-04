@@ -111,28 +111,22 @@ export default function LandingPage() {
           tagAnimation="slide-up"
           testimonials={[
             {
-              id: "1",              name: "Sarah M.",              role: "Regular Customer",              company: "Lake Worth Family",              rating: 5,
-              imageSrc: "http://img.b2bpic.net/free-photo/satisfied-female-customer-making-like-gesture-with-both-hands_74855-3666.jpg",              imageAlt: "Happy customer Sarah M."
+              id: "1",              name: "Sarah M.",              role: "Regular Customer",              company: "Lake Worth Family",              rating: 5
             },
             {
-              id: "2",              name: "Ahmed K.",              role: "Loyal Customer",              company: "Local Community",              rating: 5,
-              imageSrc: "http://img.b2bpic.net/free-photo/woman-showing-ok-sign_23-2148990150.jpg",              imageAlt: "Satisfied customer Ahmed K."
+              id: "2",              name: "Ahmed K.",              role: "Loyal Customer",              company: "Local Community",              rating: 5
             },
             {
-              id: "3",              name: "Maria G.",              role: "Family Shopper",              company: "Neighborhood Regular",              rating: 5,
-              imageSrc: "http://img.b2bpic.net/free-photo/smiling-man-sitting-cafe-table-gesturing_1262-1141.jpg?_wi=1",              imageAlt: "Happy customer Maria G."
+              id: "3",              name: "Maria G.",              role: "Family Shopper",              company: "Neighborhood Regular",              rating: 5
             },
             {
-              id: "4",              name: "David L.",              role: "Food Enthusiast",              company: "Community Member",              rating: 5,
-              imageSrc: "http://img.b2bpic.net/free-photo/positive-customer-approving-new-offer_1262-17151.jpg",              imageAlt: "Satisfied customer David L."
+              id: "4",              name: "David L.",              role: "Food Enthusiast",              company: "Community Member",              rating: 5
             },
             {
-              id: "5",              name: "Priya P.",              role: "Chef & Customer",              company: "Local Business Owner",              rating: 5,
-              imageSrc: "http://img.b2bpic.net/free-photo/smiling-man-sitting-cafe-table-gesturing_1262-1141.jpg?_wi=2",              imageAlt: "Happy customer Priya P."
+              id: "5",              name: "Priya P.",              role: "Chef & Customer",              company: "Local Business Owner",              rating: 5
             },
             {
-              id: "6",              name: "Miguel R.",              role: "Regular Shopper",              company: "Family of Four",              rating: 5,
-              imageSrc: "http://img.b2bpic.net/free-photo/satisfied-happy-female-customer-making-like-gesture_74855-3668.jpg",              imageAlt: "Satisfied customer Miguel R."
+              id: "6",              name: "Miguel R.",              role: "Regular Shopper",              company: "Family of Four",              rating: 5
             }
           ]}
           gridVariant="uniform-all-items-equal"
