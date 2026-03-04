@@ -1,53 +1,24 @@
 import type { Metadata } from "next";
-import { Montserrat } from "next/font/google";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { ServiceWrapper } from "@/components/ServiceWrapper";
-import Tag from "@/tag/Tag";
-
-const montserrat = Montserrat({
-  variable: "--font-montserrat",  subsets: ["latin"],
-});
+import "./styles/variables.css";
+import "./styles/base.css";
 
 const inter = Inter({
   variable: "--font-inter",  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  title: "Lotus Food Market | International Grocery Store in Lake Worth Beach",  description: "Discover authentic international groceries, fresh produce, halal meats, exotic spices, and homemade foods at Lotus Food Market. Your neighborhood market with global flavors.",  keywords: "international grocery store, fresh produce, halal meats, exotic spices, Lake Worth Beach, organic groceries, specialty foods",  metadataBase: new URL("https://lotusfoodmarket.com"),
-  alternates: {
-    canonical: "https://lotusfoodmarket.com"
-  },
-  openGraph: {
-    title: "Lotus Food Market - Your Neighborhood Market with Global Flavors",    description: "Shop authentic international groceries, fresh produce, halal meats, and homemade specialties. Visit us in Lake Worth Beach, FL.",    url: "https://lotusfoodmarket.com",    siteName: "Lotus Food Market",    type: "website",    images: [
-      {
-        url: "http://img.b2bpic.net/free-photo/photo-vegetables-supermarket-photo-your-advertising_185193-110549.jpg",        alt: "Lotus Food Market - Fresh International Produce"
-      }
-    ]
-  },
-  twitter: {
-    card: "summary_large_image",    title: "Lotus Food Market | International Grocery Store",    description: "Authentic flavors from around the world. Fresh. Quality. Community-focused.",    images: ["http://img.b2bpic.net/free-photo/photo-vegetables-supermarket-photo-your-advertising_185193-110549.jpg"]
-  },
-  robots: {
-    index: true,
-    follow: true
-  }
-};
+  title: "Lotus Food Market",  description: "Your neighborhood market with flavors from around the world"};
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <ServiceWrapper>
-        <body
-          className={`${montserrat.variable} ${inter.variable} antialiased`}
-        >
-          <Tag />
-          {children}
-        
+    <html lang="en">
+      <body className={inter.variable}>{children}
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -1415,7 +1386,6 @@ export default function RootLayout({
           }}
         />
       </body>
-      </ServiceWrapper>
     </html>
   );
 }

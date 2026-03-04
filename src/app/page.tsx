@@ -28,14 +28,14 @@ export default function LandingPage() {
       <div id="nav" data-section="nav">
         <NavbarStyleCentered
           navItems={[
-            { name: "Home", id: "home" },
-            { name: "About", id: "about" },
-            { name: "Products", id: "products" },
-            { name: "Reviews", id: "testimonials" },
-            { name: "Visit Us", id: "contact" }
+            { name: "Home", id: "/" },
+            { name: "About", id: "#about" },
+            { name: "Products", id: "#products" },
+            { name: "Reviews", id: "#testimonials" },
+            { name: "Visit Us", id: "#contact" }
           ]}
           brandName="Lotus Food Market"
-          button={{ text: "Get Directions", href: "contact" }}
+          button={{ text: "Get Directions", href: "#contact" }}
         />
       </div>
 
@@ -51,8 +51,8 @@ export default function LandingPage() {
           ]}
           avatarText="Trusted by 142+ satisfied customers • 5.0 stars"
           buttons={[
-            { text: "Get Directions Now", href: "contact" },
-            { text: "Learn More", href: "about" }
+            { text: "Get Directions Now", href: "#contact" },
+            { text: "Learn More", href: "#about" }
           ]}
           buttonAnimation="slide-up"
           ariaLabel="Hero section for Lotus Food Market"
@@ -98,7 +98,7 @@ export default function LandingPage() {
           animationType="blur-reveal"
           textboxLayout="default"
           useInvertedBackground={true}
-          buttons={[{ text: "Visit Store", href: "contact" }]}
+          buttons={[{ text: "Visit Store", href: "#contact" }]}
           buttonAnimation="slide-up"
         />
       </div>
@@ -163,7 +163,7 @@ export default function LandingPage() {
           animationType="blur-reveal"
           textboxLayout="default"
           useInvertedBackground={false}
-          buttons={[{ text: "Contact Us", href: "contact" }]}
+          buttons={[{ text: "Contact Us", href: "#contact" }]}
           buttonAnimation="slide-up"
         />
       </div>
