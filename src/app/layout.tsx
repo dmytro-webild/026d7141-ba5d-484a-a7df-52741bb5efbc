@@ -9,7 +9,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Lotus Food Market",  description: "Your neighborhood market with flavors from around the world"};
+  title: "Lotus Food Market",  description: "Your neighborhood market with flavors from around the world"
+};
 
 export default function RootLayout({
   children,
